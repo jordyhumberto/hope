@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/***************************************************************************************/
+footer div{
+    background: #2F3B49;
+    font-size: .8vw;
+    color: white;
+}
+.p_footer{
+    display: flex;
+    height: 4vw;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.p_footer p{
+    margin:0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+/***************************************************************************************/
+.banner{/*banner superior*/
+    background: #DBCEC8;/*poner en blanco*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.l_upein{/*LOGO DE LA UNIVERSIDAD*/
+    display: block;
+    width: 3vw;
+    height: 3vw;
+    margin: .5vw;
+    margin-left: 1vw;
+}
+.p_upein{/*nombre de la universidad en el banner*/
+    display: inline;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #FF6C60;
+    font-size: 2vw;
+    margin: 0;
+}
+.p_otro{
+    display: inline;
+    font-family: 'IBM Plex Mono', monospace;
+    color:white;
+    font-size: 2vw;
+    margin: 0;
+    margin-left:.5vw; 
+}
+/***************************************************************************************/
+.contenedor{
+    padding: 0;
+    margin: auto; 
+    background: white;
+}
+.container{/*contenedor de la tabla*/
+    background-color: white;
+    width: 100%;
+    padding: 4vw;
+    min-height: 100vh;
+    /* margin-bottom:1vw; */
+}
+/*******************************************************************************/
+
+nav{
+    background: rgb(47, 59, 73);
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-top:1.2vw; 
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .5vw;
+    width: 95%;
+    margin:auto;
+}
+ul li{
+    padding: .4vw;
+}
+ul li a{
+    text-decoration: none;
+    color:grey;
+    padding: .4vw;
+    box-sizing: border-box;
+    font-size: 1.2vw;
+    font-family: 'IBM Plex Mono', monospace;
+}
+ul li a:hover{
+    border-bottom:.3vw solid #FF6C60;
+    color:#fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul li ul{
+    display: none;
+    border-radius: 1vw;
+}
+ul li ul:target{
+    display: block;
+}
+ul li ul li ul{
+    display: none;
+    border-radius: 1vw;
+}
+ul li ul li ul:target{
+    display: block;
+}
+/* ul li ul li:hover > ul{
+    top:0;
+} */
+ul li ul li a{
+    font-size: 1vw;
+}
+ul li ul li ul li a{
+    font-size: .9vw;
+}
+/********************************************************************************/
+#slider{
+    height: 100vh;
+}
+#bienvenido{
+    height: 100%;
+    width: 100%;
+}
+.lado1{
+    width: 20vw;
+    background: #2A3542;
+}
+.lado2{
+    width: 80vw;
+}
