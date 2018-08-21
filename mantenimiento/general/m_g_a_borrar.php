@@ -6,6 +6,8 @@ if(!isset($_SESSION["id_usuario"])){
     header("Location: ../../index.php");
 }
 $IDAlumno=$_GET['IDAlumno'];
+$sql="DELETE FROM tbl_alumno WHERE IDAlumno='$IDAlumno'";
+$resultado=$mysqli->query($sql);
 ?>
 <html lang="es">
 	<head>
@@ -26,9 +28,16 @@ $IDAlumno=$_GET['IDAlumno'];
 		<div class="container">
 			<div class="row">
 				<div class="row" style="text-align:center">
-                    <h3>¿Desea eliminar este regristro?</h3>
+                <?php 
+                    
+                    if($resultado) { 
+						    echo '<h3>REGISTRO BORRADO</h3>';
+						} else { 
+						    echo '<h3>ERROR AL BORRAR</h3>';
+                        } 
+                    
+                    ?>
 					<a href="m_g_alumno.php" class="btn btn-primary">Regresar</a>
-                    <a href="m_g_a_borrar.php?IDAlumno=<?php echo $IDAlumno;?>" class="btn btn-primary">Borrar</a>
 				</div>
 			</div>
 		</div>

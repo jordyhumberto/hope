@@ -127,6 +127,7 @@
 					<label for="Departamento" class="col-sm-2 control-label">Departamento</label>
 					<div class="col-sm-2">
 						<select class="form-control" id="departamento" name="departamento">
+								<option value="">NINGUNO</option>
 							<?php while($row = $resultado9->fetch_array(MYSQLI_ASSOC)) { ?>
 								<option value="<?php echo $row['Cod_Dep']; ?>"
                                 <?php if($row['Cod_Dep']==$fila['Cod_dep'])echo 'selected';?>
@@ -137,6 +138,7 @@
 					<label for="Provincia" class="col-sm-2 control-label">Provincia</label>
 					<div class="col-sm-2">
 						<select class="form-control" id="provincia" name="provincia">
+								<option value="">NINGUNO</option>
 							<?php while($row = $resultado8->fetch_array(MYSQLI_ASSOC)) { ?>
 								<option value="<?php echo $row['Cod_Prov']; ?>"
                                 <?php if($row['Cod_Prov']==$fila['Cod_prov'])echo 'selected';?>
@@ -147,10 +149,11 @@
 					<label for="Distrito" class="col-sm-2 control-label">Distrito</label>
 					<div class="col-sm-2">
 						<select class="form-control" id="distrito" name="distrito">
+								<option value="">NINGUNO</option>
 							<?php while($row = $resultado7->fetch_array(MYSQLI_ASSOC)) { ?>
 								<option value="<?php echo $row['Cod_Dist']; ?>"
                                 <?php if($row['Cod_Dist']==$fila['Cod_dist'])echo 'selected';?>
-                                ><?php echo $row['Nom_dis']; ?></option>	
+                                ><?php echo $row['Nom_Dist']; ?></option>	
 							<?php } ?>
 						</select>
 					</div>
@@ -197,6 +200,7 @@
 					<label for="Departamenton" class="col-sm-2 control-label">Departamento Nacimiento</label>
 					<div class="col-sm-4">
 						<select class="form-control" id="departamenton" name="departamenton">
+							<option value="">NINGUNO</option>
 							<?php while($row = $resultado11->fetch_array(MYSQLI_ASSOC)) { ?>
 								<option value="<?php echo $row['Cod_Dep']; ?>"
                                 <?php if($row['Cod_Dep']==$fila['Cod_dep'])echo 'selected'?>
@@ -207,6 +211,7 @@
 					<label for="Provincian" class="col-sm-2 control-label">Provincia Nacimiento</label>
 					<div class="col-sm-4">
 						<select class="form-control" id="provincian" name="provincian">
+								<option value="">NINGUNO</option>
 							<?php while($row = $resultado10->fetch_array(MYSQLI_ASSOC)) { ?>
 								<option value="<?php echo $row['Cod_Prov']; ?>"
                                 <?php if($row['Cod_Prov']==$fila['Cod_prov'])echo 'selected'?>

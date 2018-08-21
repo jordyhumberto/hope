@@ -81,8 +81,8 @@
 									<th>Apellido_M</th>
 									<th>Telefono</th>
 									<th>Email</th>
-									<th></th>
-									<th></th>
+									<th>Modificar</th>
+									<th>Borrar</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -95,7 +95,7 @@
 										<td><?php echo $row['Telf_celular']; ?></td>
 										<td><?php echo $row['Email']; ?></td>
 										<td><a href="m_g_a_modificar.php?IDAlumno=<?php echo $row['IDAlumno']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
-										<td><a href="m_g_a_delete.php?IDAlumno=<?php echo $row['IDAlumno']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
+										<td><a href="m_g_a_delete.php?IDAlumno=<?php echo $row['IDAlumno']; ?>"><span class="glyphicon glyphicon-trash"></span></a></td>
 									</tr>
 								<?php } ?>
 							</tbody>
