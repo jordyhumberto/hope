@@ -11,7 +11,7 @@
     $resultado2 = $mysqli->query($sql2);
     $sql3 = "SELECT * FROM tbl_tipo_aula ORDER BY IDTA";
 	$resultado3 = $mysqli->query($sql3);
-	$sql4 = "SELECT * FROM tbl_cursos ORDER BY IDCursos";
+	$sql4 = "SELECT * FROM tbl_cursos ORDER BY Descripcion";
     $resultado4 = $mysqli->query($sql4);
 ?>
 <html lang="es">

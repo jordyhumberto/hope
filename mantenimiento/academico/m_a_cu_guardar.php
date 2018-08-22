@@ -4,11 +4,11 @@
 	//Evaluamos si existe la variable de sesión id_usuario, si no existe redirigimos al index
 	if(!isset($_SESSION["id_usuario"])){
     	header("Location: ../../index.php");
-	}
+    }
+    $carrera=$_POST['carrera'];
     $año=$_POST['año'];
     $semestre=$_POST['semestre'];
     $id=$_POST['id'];
-    $carrera=$_POST['carrera'];
     $tipoc=$_POST['tipoc'];
     $ciclo=$_POST['ciclo'];
     $descripcion=$_POST['descripcion'];
@@ -21,35 +21,32 @@
     $tipo=$_POST['tipo'];
     $pre=$_POST['pre'];
     $plan=$_POST['plan'];
-    /* if($ciclo<10){
+
+   /*  if($ciclo<10){
         $cad='0'.$ciclo;
     }else{
         $cad=$ciclo;
     }
-     */
- 
-    /* $cadd=$carrera.$tipoc.$cad;
+    
+    $cadd=$carrera.$tipoc.$cad;
     $num='01';
     $co='';
     $id=$cadd.$num;
 
-    $sql1 = "SELECT IDCursos FROM tbl_cursos1";
+    $sql1 = "SELECT IDCursos FROM tbl_cursos";
     $resultado1 = $mysqli->query($sql1);
 
-	
 	while($row = $resultado1->fetch_array(MYSQLI_ASSOC)) { 
         if($id==$row['IDCursos']){
-
-            $co= intval($co)+1;
-            
+            $co= intval($co)+1; 
             if ($co<10){
                 $co='0'.$co;
             }
-            
             $id=$cadd.$co;
             $resultado1 = $mysqli->query($sql1);
         }
-    } */ 
+    }  */
+
     $sql ="INSERT INTO tbl_cursos(Año,Semestre,IDCursos,Descripcion,IDCarrera,Tipo_Curso,IDCiclo,IDPrerequisito,Creditos,Rcreditos,HorasTeoricas,HorasPractica,Tipo,IDTA,Plan_estudio,Estado)";
     $sql.=" VALUES('$año','$semestre','$id','$descripcion','$carrera','$tipoc','$ciclo','$pre','$creditos','$creditosr','$horast','$horasp','$tipo','$tipoa','$plan','$estado')";
 	$resultado = $mysqli->query($sql);
@@ -69,7 +66,6 @@
 		<script src="../../js/jquery-3.3.1.min.js"></script>
 		<script src="../../js/bootstrap.min.js"></script>	
 	</head>
-	
 	<body>
 		<div class="container">
 			<div class="row">

@@ -84,8 +84,8 @@
 									<td><?php echo $row['IDCursos']; ?></td>
 									<td><?php echo $row['Descripcion'];?></td>
 									<td><?php echo $row['IDCiclo']; ?></td>
-									<td><a href="m_a_cu_modificar.php?IDCursos=<?echo $row['IDCursos'];?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
-									<td><a href="m_a_cu_delete.php?IDCursos=<?echo $row['IDCursos'];?>"><span class="glyphicon glyphicon-trash"></span></a></td>
+									<td><a href="m_a_cu_modificar.php?IDCursos=<?php echo $row['IDCursos'];?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
+									<td><a href="m_a_cu_delete.php?IDCursos=<?php echo $row['IDCursos'];?>"><span class="glyphicon glyphicon-trash"></span></a></td>
 								</tr>
 								<?php } ?>
 							</tbody>
