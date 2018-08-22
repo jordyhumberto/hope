@@ -13,6 +13,7 @@
                 </li>
                 <li><a class="accordion-titulo">Academico</a>
                     <ul class="accordion-content">
+                        <li><a href="mantenimiento/academico/m_a_plan.php">Plan de estudio</a></li>
                         <li><a href="mantenimiento/academico/m_a_ciclo.php">Ciclos</a></li>
                         <li><a href="mantenimiento/academico/m_a_curso.php">Cursos</a></li>
                         <li><a href="mantenimiento/academico/m_a_tipo_aula.php">Tipo de aula</a></li>
