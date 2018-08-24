@@ -51,7 +51,7 @@
 				</div>
 				
 				<div class="form-group">
-					<label for="estado_civil" class="col-sm-2 control-label">Estado</label>
+					<label for="estado" class="col-sm-2 control-label">Estado</label>
 					<div class="col-sm-10">
 						<select class="form-control" id="estado" name="estado">
 							<option value="01" <?php if($row['Estado']=='01') echo 'selected'; ?>>ACTIVO</option>
