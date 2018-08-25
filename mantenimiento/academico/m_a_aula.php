@@ -4,7 +4,7 @@
 	if(!isset($_SESSION["id_usuario"])){
 		header("Location: ../../index.php");
 	}
-	$sql = "SELECT * FROM tbl_docente";
+	$sql = "SELECT * FROM tbl_aula";
 	$resultado = $mysqli->query($sql);
 ?>
 <!DOCTYPE html>
@@ -16,7 +16,6 @@
     <meta name="keywords" content="universidad, peruana, investigación, investigacion, negocios, upein, UPEIN">
   	<meta name="description" content="UPEIN! - Universidad Peruana de Invesitgacion y Negocios da la bienvenida a sus nuevos estudiantes">
 	<title>Intranet</title>
-
     <link href="../../img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../../css/bootstrap-theme.css" rel="stylesheet">
@@ -24,9 +23,7 @@
 	<script src="../../js/bootstrap.min.js"></script>	
 	<link href="../../css/jquery.dataTables.min.css" rel="stylesheet">	
 	<script src="../../js/jquery.dataTables.min.js"></script>
-
 	<link rel="stylesheet" href="../../css/estilos.css">
-	
 	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Ultra" rel="stylesheet">
 	<script>
 		$(document).ready(function(){
@@ -53,32 +50,26 @@
 <body>
 <div class="contenedor">
 		<?php include "../../banneru.php";?>
-	<div class="cuerpo" style="display:flex;">
-		<div class="lado1"><?php include '../../nav.php'?></div>
+		<div class="cuerpo" style="display:flex;">
+			<div class="lado1"><?php include '../../nav.php'?></div>
 			<div class="lado2">
 				<div class="container">
 				<div class="row" style="background:#FF6C60;border-radius:.8vw .8vw 0 0;">
-					<h2 style="text-align:center;color:#ffff;">Formulario de Docentes</h2>
+					<h2 style="text-align:center;color:#ffff;">Formulario de Aula</h2>
 				</div>
 				<br>
 				<div class="row">
-					<a href="m_a_d_nuevo.php" class="btn btn-primary">Nuevo Registro</a>
+					<a href="m_a_a_nuevo.php" class="btn btn-primary">Nuevo Registro</a>
 				</div>
 				<br>
 				<div class="row table-responsive">
-				<!-- tabla de profesores -->
 				<table class="display" id="mitabla">
 						<thead>
 							<tr>
-								<th>IDDocente</th>
-								<th>Apellidos</th>
-								<th>Apellidos</th>
-								<th>Nombres</th>
-								<th>HClases</th>
-								<th>HOtros</th>
-								<th>Telefono</th>
-								<th>Email</th>
-								<th>Estado</th>
+								<th>ID_Aula</th>
+								<th>Descripción</th>
+								<th>Hora_Apertura</th>
+                                <th>Hora_Cierre</th>
 								<th>Modificar</th>
 								<th>Borrar</th>
 							</tr>
@@ -86,21 +77,12 @@
 						<tbody>
 							<?php while($row = $resultado->fetch_array(MYSQLI_ASSOC)) { ?>
 								<tr>
-									<td><?php echo $row['IDDocente']; ?></td>
-									<td><?php echo $row['APaterno']; ?></td>
-									<td><?php echo $row['AMaterno']; ?></td>
-									<td><?php echo $row['Nombres']; ?></td>
-									<td><?php echo $row['HClases']; ?></td>
-									<td><?php echo $row['HOtros']; ?></td>
-									<td><?php echo $row['Telefono']; ?></td>
-									<td><?php echo $row['Email']; ?></td>
-									<td><?php if($row['Estado']=='01'){
-										echo "Activo";	
-									}else{
-										echo "Inactivo";
-									}?></td>
-									<td><a href="m_a_d_modificar.php?IDDocente=<?php echo $row['IDDocente']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
-									<td><a href="m_a_d_delete.php?IDDocente=<?php echo $row['IDDocente']; ?>"><span class="glyphicon glyphicon-trash"></span></a></td>
+									<td><?php echo $row['IDAula']; ?></td>
+									<td><?php echo $row['Descripcion']; ?></td>
+									<td><?php echo $row['Hora_Apertura']; ?></td>
+                                    <td><?php echo $row['Hora_Cierre']; ?></td>
+									<td><a href="m_a_a_modificar.php?IDAula=<?php echo $row['IDAula']; ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
+									<td><a href="m_a_a_delete.php?IDAula=<?php echo $row['IDAula']; ?>"><span class="glyphicon glyphicon-trash"></span></a></td>
 								</tr>
 							<?php } ?>
 						</tbody>
