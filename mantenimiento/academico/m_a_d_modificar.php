@@ -145,7 +145,7 @@
 					</div>
 					<label for="htotal" class="col-sm-1 control-label">htotal</label>
 					<div class="col-sm-3">
-						<input type="number" class="form-control" id="htotal" name="htotal" placeholder="TOTAL HORAS SEMANALES" value="<?php echo $row['HTotal'];?>>
+						<input type="number" class="form-control" id="htotal" name="htotal" placeholder="TOTAL HORAS SEMANALES" value="<?php echo $row['HTotal'];?>">
 					</div>
 				</div>
 				<div class="form-group">
