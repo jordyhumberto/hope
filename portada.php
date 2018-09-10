@@ -4,6 +4,10 @@ require 'conexion.php'; //Agregamos el script de Conexión
 if(!isset($_SESSION["id_usuario"])){
     header("Location: index.php");
 }
+$id=$_SESSION["id_usuario"];
+$sql="SELECT * FROM usuarios WHERE Id_Usuario='$id'";
+$resultado=$mysqli->query($sql);
+$row=$resultado->fetch_array(MYSQLI_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="es">

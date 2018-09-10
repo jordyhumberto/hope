@@ -32,10 +32,6 @@
         }
         h1 {
             color: #DBCEC8;
-            font-family: 'Shrikhand', cursive;
-            font-family: 'Great Vibes', cursive;
-            font-family: 'Press Start 2P', cursive;
-            font-family: 'Black Ops One', cursive;
             font-size: 9VW;
             font-weight: 600;
             text-transform: uppercase;

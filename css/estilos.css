@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /***************************************************************************************/
 footer div{
@@ -21,30 +22,69 @@ footer div{
     font-family: 'IBM Plex Mono', monospace;
 }
 /***************************************************************************************/
+.cabecera{
+    background: rgb(3, 16, 37);
+    /* background: #2A3542; */
+    display: flex;
+}
 .banner{/*banner superior*/
-    background: #DBCEC8;/*poner en blanco*/
+    /*poner en blanco*/
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+.cont-usuario{
+    /* background: red; */
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    background: rgb(47, 59, 73);
+    padding: .8vw;
+    margin: .3vw;
+    border-radius: .8vw; 
+    margin-right: .8vw;
+    transition: background .4s;
+}
+.usuario:hover{
+    background: rgb(140, 144, 148);
+    cursor: pointer;
+}
+.usuario span{
+    font-size: 2.5vw;
+    color: rgb(255, 255, 255);
+    border: .2vw white solid;
+    border-radius: .7vw;
+}
+.usuario p{
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    margin:0px;
+    margin-left: .4vw;
+}
 .l_upein{/*LOGO DE LA UNIVERSIDAD*/
     display: block;
-    width: 3vw;
-    height: 3vw;
+    width: 5vw;
+    height: 5vw;
     margin: .5vw;
-    margin-left: 1vw;
+    margin-left: .4vw;
 }
 .p_upein{/*nombre de la universidad en el banner*/
     display: inline;
     font-family: 'IBM Plex Mono', monospace;
-    color: #FF6C60;
+    color: rgb(218, 49, 49);
     font-size: 2vw;
     margin: 0;
 }
 .p_otro{
     display: inline;
     font-family: 'IBM Plex Mono', monospace;
-    color:white;
+    color:rgb(240, 238, 137);
     font-size: 2vw;
     margin: 0;
     margin-left:.5vw; 
@@ -139,4 +179,8 @@ ul li ul li ul li a{
 }
 .lado2{
     width: 80vw;
+}
+.p_p p{
+    color:white;
+    text-align: center;
 }
