@@ -151,7 +151,10 @@ footer div{
     line-height: 3;
     cursor: pointer;
   }
-  .blue label,.blueI label {
+  .blue label,.blueI label{
+      margin: 0px;
+  }
+  .blue label {
     background: #2980b9;
   }
   .blueI label {

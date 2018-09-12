@@ -1,7 +1,5 @@
 <div class="wrapper">
-        <!-- <h1>Pure CSS Accordion</h1> -->
     <div class="half">
-          <!-- <p>Open <strong>one</strong></p> -->
         <div class="tab blue">
             <input id="tab-mantenimiento" type="radio" name="tabs2">
             <label for="tab-mantenimiento">Mantenimiento</label>
