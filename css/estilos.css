@@ -2,7 +2,10 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --color-fondo-formulario:rgb(240, 240, 240);
 }
 /***************************************************************************************/
 footer div{
@@ -23,7 +26,7 @@ footer div{
 }
 /***************************************************************************************/
 .cabecera{
-    background: rgb(3, 16, 37);
+    background: rgb(26, 26, 26);
     /* background: #2A3542; */
     display: flex;
 }
@@ -55,116 +58,58 @@ footer div{
     cursor: pointer;
 }
 .usuario span{
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     color: rgb(255, 255, 255);
-    border: .2vw white solid;
-    border-radius: .7vw;
+    border: .15vw white solid;
+    border-radius: .5vw;
 }
 .usuario p{
     text-align: center;
-    font-size: 2vw;
+    font-size: 1vw;
     color: rgb(255, 255, 255);
     margin:0px;
     margin-left: .4vw;
+    font-weight: bold;
 }
 .l_upein{/*LOGO DE LA UNIVERSIDAD*/
     display: block;
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     margin: .5vw;
     margin-left: .4vw;
 }
+.p_p p{
+    display: block;
+    margin: 0px;
+    color:white;
+    text-align: center;
+    height: 1.5vw;
+}
 .p_upein{/*nombre de la universidad en el banner*/
-    display: inline;
-    font-family: 'IBM Plex Mono', monospace;
-    color: rgb(218, 49, 49);
-    font-size: 2vw;
-    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.5vw;
 }
 .p_otro{
-    display: inline;
-    font-family: 'IBM Plex Mono', monospace;
-    color:rgb(240, 238, 137);
-    font-size: 2vw;
-    margin: 0;
-    margin-left:.5vw; 
+    font-size: 1.2vw; 
 }
+
 /***************************************************************************************/
 .contenedor{
     padding: 0;
     margin: auto; 
-    background: white;
+    background: var(--color-fondo-formulario);
 }
 .container{/*contenedor de la tabla*/
-    background-color: white;
-    width: 100%;
-    padding: 4vw;
-    min-height: 100vh;
-    /* margin-bottom:1vw; */
-}
-/*******************************************************************************/
-
-nav{
-    background: rgb(47, 59, 73);
-    border-radius: 1vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    margin: auto;
-    margin-top:1.2vw; 
-}
-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    list-style: none;
-    font-size: 1vw;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: .5vw;
+    background: white;
     width: 95%;
-    margin:auto;
+    /* padding: 1vw 4vw; */
+    min-height: 100vh;
+    border-radius: .7vw;
+    margin: 1vw auto;
 }
-ul li{
-    padding: .4vw;
-}
-ul li a{
-    text-decoration: none;
-    color:grey;
-    padding: .4vw;
-    box-sizing: border-box;
-    font-size: 1.2vw;
-    font-family: 'IBM Plex Mono', monospace;
-}
-ul li a:hover{
-    border-bottom:.3vw solid #FF6C60;
-    color:#fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-ul li ul{
-    display: none;
-    border-radius: 1vw;
-}
-ul li ul:target{
-    display: block;
-}
-ul li ul li ul{
-    display: none;
-    border-radius: 1vw;
-}
-ul li ul li ul:target{
-    display: block;
-}
-/* ul li ul li:hover > ul{
-    top:0;
-} */
-ul li ul li a{
-    font-size: 1vw;
-}
-ul li ul li ul li a{
-    font-size: .9vw;
-}
+/***************************************************************************************/
+
 /********************************************************************************/
 #slider{
     height: 100vh;
@@ -174,13 +119,81 @@ ul li ul li ul li a{
     width: 100%;
 }
 .lado1{
-    width: 20vw;
-    background: #2A3542;
+    width: 18vw;
+    background: rgb(23, 29, 36);
 }
 .lado2{
-    width: 80vw;
+    width: 82vw;
+    /* background: grey; */
 }
-.p_p p{
-    color:white;
+/*--------------------------------------------------------------------------------*/
+.half {
+    width: 18vw;
+  }
+  /* Acordeon styles */
+  .tab,.tabI {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+  }
+  .tab input,.tabI input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab label,.tabI label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+  }
+  .blue label,.blueI label {
+    background: #2980b9;
+  }
+  .blueI label {
+    background: #194e70;
+  }
+  .tab-content,.tabI-contentI {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+  }
+  .blue .tab-content,.blueI .tabI-contentI {
+    background: #3498db;
+  }
+  .blueI .tabI-contentI {
+    background: #16425f;
+  }
+  .tab-content p,.tabI-contentI p {
+    margin: 1em;
+  }
+  /* :checked */
+  .tab input:checked ~ .tab-content,.tabI input:checked ~ .tabI-contentI {
+    max-height: 100vh;
+  }
+  /* Icon */
+  .tab label::after,.tabI label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
     text-align: center;
-}
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+  }
+  .tab input[type=radio] + label::after,.tabI input[type=radio] + label::after {
+    content: "\25BC";
+  }
+  .tab input[type=radio]:checked + label::after,.tabI input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+  }

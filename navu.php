@@ -1,117 +1,126 @@
-<nav>
-    <ul>
-        <li><a class="accordion-titulo">Mantenimientos&nbsp<i class="fas fa-edit"></i></span></a>
-            <ul class="accordion-content">
-                <li><a class="accordion-titulo">General</a>
-                    <ul class="accordion-content">
-                        <li><a href="mantenimiento/general/m_g_alumno.php">Alumno</a></li>
-                        <li><a href="mantenimiento/general/m_g_colegio.php">Colegio</a></li>
-                        <li><a href="mantenimiento/general/m_g_semestre.php">Semestre</a></li>
-                        <li><a href="mantenimiento/general/m_g_detalle.php">Det_Sem</a></li>
-                        <li><a href="mantenimiento/general/m_g_tipo.php">Tipo de Pago</a></li>
-                    </ul>
-                </li>
-                <li><a class="accordion-titulo">Academico</a>
-                    <ul class="accordion-content">
-                        <li><a href="mantenimiento/academico/m_a_plan.php">Plan de estudio</a></li>
-                        <li><a href="mantenimiento/academico/m_a_ciclo.php">Ciclos</a></li>
-                        <li><a href="mantenimiento/academico/m_a_curso.php">Cursos</a></li>
-                        <li><a href="mantenimiento/academico/m_a_tipo_aula.php">Tipo de aula</a></li>
-                        <li><a href="mantenimiento/academico/m_a_aula.php">Aula</a></li>
-                        <li><a href="mantenimiento/academico/m_a_docente.php">Docentes</a></li>
-                        <li><a href="mantenimiento/academico/m_a_curso_docente.php">Cursos-Docentes</a></li>
-                    </ul>
-                </li>
-                <li><a class="accordion-titulo">Administrativo</a>
-                    <ul class="accordion-content">
-                        <li><a href="mantenimiento/administrativo/m_ad_beca.php">Becas</a></li>
-                        <li><a href="mantenimiento/administrativo/m_ad_facultad.php">Facultad</a></li>
-                        <li><a href="mantenimiento/administrativo/m_ad_carrera.php">Carrera</a></li>
-                        <li><a href="#">categoria</a></li>
-                        <li><a href="mantenimiento/administrativo/m_ad_modalidad_ingreso.php">Modo de Ingreso</a></li>
-                        <li><a href="mantenimiento/administrativo/m_ad_proceso.php">Proceso Admision</a></li>
-                        <li><a href="mantenimiento/administrativo/m_ad_becaa.php">Asignar Beca</a></li>
-                        <li><a href="#">Usuarios</a></li>
-                        <!-- <li><a href="#">Movimientos Usuario</a></li>
-                        <li><a href="#">Documento D' Impresión</a></li> -->
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li><a class="accordion-titulo">Procesos&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-edit"></i></a>
-            <ul class="accordion-content">
-                <li><a class="accordion-titulo">Matricula</a>
-                    <ul class="accordion-content">
-                        <li><a href="proceso/matricula/p_m_matricula.php">Matricula</a></li>
-                        <li><a href="#">Anular-Matricula</a></li>
-                    </ul>
-                </li>
-                <li ><a class="accordion-titulo">Descuentos</a>
-                    <ul class="accordion-content">
-                        <li><a href="#">Descuentos</a></li>
-                        <li><a href="#">Anular-Descuentos</a></li>
-                    </ul>
-                </li>
-                <li ><a class="accordion-titulo">Pagos</a>
-                    <ul class="accordion-content">
-                        <li><a href="#">Pagos</a></li>
-                        <li><a href="#">Adelantos</a></li>
-                        <li><a href="#">Anular-Pagos</a></li>
-                    </ul>
-                </li>
-                <li ><a class="accordion-titulo">Academico</a>
-                    <ul class="accordion-content">
-                        <li><a href="proceso/academico/p_a_horario.php">Horario</a></li>
-                        <li><a href="proceso/academico/p_a_cursoo.php">Curso-Operativo</a></li>
-                        <li><a href="#">Horario-Clases</a></li>
-                        <li><a href="#">Cursos-Alumno</a></li>
-                        <li><a href="proceso/academico/p_a_registronotas.php">Registro-Notas</a></li>
-                        <!-- <li><a href="#">Registro-Notas-Admin</a></li> -->
-                    </ul>
-                </li>
-                <li ><a class="accordion-titulo">Consultas Notas</a></li>
-            </ul>
-        </li>
-            <!--concentrarme en estos dos-->
-        <li><a class="accordion-titulo">Consultas&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-edit"></i></a>
-            <ul class="accordion-content">
-                <li><a href="consultas/alumnos/c_a_alumnos.php">Alumnos</a></li>
-                <li><a href="consultas/pagoalumnos/c_pgs_pagoalumnos.php">Compromiso Alumnos</a></li>
-                <li><a href="consultas/pagofecha/c_pf_pagofecha.php">Pagos por Fecha</a></li>
-                <li><a href="consultas/matricula/c_m_matricula.php">Matricula Alumno</a></li>
-                <li><a href="consultas/pagoalumno/c_pg_pagoalumno.php">Pago Alumnos</a></li>
-                <li><a href="consultas/verpago/c_v_verpago.php">Ver Pagos</a></li>
-                <li><a href="consultas/notasalumno/c_n_notasalumno.php">Notas por Alumno</a></li>
-                <li><a href="#">Pagos por Tipo</a></li>
-            </ul>					
-        </li>
-        <li><a class="accordion-titulo">Reportes&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-edit"></i></a>
-            <ul class="accordion-content">
-                <li><a href="#">Pagos por Proceso</a></li>
-                <li><a href="#">Historico de Pagos</a></li>
-                <li><a href="#">Notas por cuso ope.</a></li>
-                <li><a href="#">Notas Registradas.</a></li>
-                <li><a href="#">Horario Alumnos.</a></li><!--no sirve-->
-                <li><a href="#">Horario Docente.</a></li><!--no sirve-->
-                <li><a href="#">Horario Aula.</a></li><!--no sirve-->
-            </ul>
-        </li>
-        <li><a href="logout.php">Salir</a></li>
-    </ul>	
-</nav>
-<script>
-    $(".accordion-titulo").click(function(){
-		
-        var contenido=$(this).next(".accordion-content");
-                 
-        if(contenido.css("display")=="none"){ //open		
-           contenido.slideDown(250);			
-           $(this).addClass("open");
-        }
-        else{ //close		
-           contenido.slideUp(250);
-           $(this).removeClass("open");	
-       }
-                                 
-     });
-</script>
+<div class="wrapper">
+        <!-- <h1>Pure CSS Accordion</h1> -->
+    <div class="half">
+          <!-- <p>Open <strong>one</strong></p> -->
+        <div class="tab blue">
+            <input id="tab-mantenimiento" type="radio" name="tabs2">
+            <label for="tab-mantenimiento">Mantenimiento</label>
+            <div class="tab-content">
+                <div class="tabI blueI">
+                    <input id="tabI-general" type="radio" name="tabIs2">
+                    <label for="tabI-general">General</label>
+                    <div class="tabI-contentI">
+                        <p><a href="mantenimiento/general/m_g_alumno.php">Alumno</a></p>
+                        <p><a href="mantenimiento/general/m_g_colegio.php">Colegio</a></p>
+                        <p><a href="mantenimiento/general/m_g_semestre.php">Semestre</a></p>
+                        <p><a href="mantenimiento/general/m_g_detalle.php">Det_Sem</a></p>
+                        <p><a href="mantenimiento/general/m_g_tipo.php">Tipo de Pago</a></p>
+                    </div>
+                </div>
+                <div class="tabI blueI">
+                    <input id="tabI-academico" type="radio" name="tabIs2">
+                    <label for="tabI-academico">Academico</label>
+                    <div class="tabI-contentI">
+                        <p><a href="mantenimiento/academico/m_a_plan.php">Plan de estudio</a></p>
+                        <p><a href="mantenimiento/academico/m_a_ciclo.php">Ciclos</a></p>
+                        <p><a href="mantenimiento/academico/m_a_curso.php">Cursos</a></p>
+                        <p><a href="mantenimiento/academico/m_a_tipo_aula.php">Tipo de aula</a></p>
+                        <p><a href="mantenimiento/academico/m_a_aula.php">Aula</a></p>
+                        <p><a href="mantenimiento/academico/m_a_docente.php">Docentes</a></p>
+                        <p><a href="mantenimiento/academico/m_a_curso_docente.php">Cursos-Docentes</a></p>
+                    </div>
+                </div>
+                <div class="tabI blueI">
+                    <input id="tabI-administrativo" type="radio" name="tabIs2">
+                    <label for="tabI-administrativo">Administrativo</label>
+                    <div class="tabI-contentI">
+                        <p><a href="mantenimiento/administrativo/m_ad_beca.php">Becas</a></p>
+                        <p><a href="mantenimiento/administrativo/m_ad_facultad.php">Facultad</a></p>
+                        <p><a href="mantenimiento/administrativo/m_ad_carrera.php">Carrera</a></p>
+                        <p><a href="#">categoria</a></p>
+                        <p><a href="mantenimiento/administrativo/m_ad_modalidad_ingreso.php">Modo de Ingreso</a></p>
+                        <p><a href="mantenimiento/administrativo/m_ad_proceso.php">Proceso Admision</a></p>
+                        <p><a href="mantenimiento/administrativo/m_ad_becaa.php">Asignar Beca</a></p>
+                        <p><a href="#">Usuarios</a></p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="tab blue">
+            <input id="tab-procesos" type="radio" name="tabs2">
+            <label for="tab-procesos">Procesos</label>
+            <div class="tab-content">
+                <div class="tabI blueI">
+                    <input id="tabI-matricula" type="radio" name="tabIs2">
+                    <label for="tabI-matricula">Matricula</label>
+                    <div class="tabI-contentI">
+                        <p><a href="proceso/matricula/p_m_matricula.php">Matricula</a></p>
+                        <p><a href="#">Anular-Matricula</a></p>
+                    </div>
+                </div>
+                <div class="tabI blueI">
+                    <input id="tabI-descuentos" type="radio" name="tabIs2">
+                    <label for="tabI-descuentos">Descuentos</label>
+                    <div class="tabI-contentI">
+                        <p><a href="#">Descuentos</a></p>
+                        <p><a href="#">Anular-Descuentos</a></p>
+                    </div>
+                </div>
+                <div class="tabI blueI">
+                    <input id="tabI-pagos" type="radio" name="tabIs2">
+                    <label for="tabI-pagos">Pagos</label>
+                    <div class="tabI-contentI">
+                        <p><a href="#">Pagos</a></p>
+                        <p><a href="#">Adelantos</a></p>
+                        <p><a href="#">Anular-Pagos</a></p>
+                    </div>
+                </div>
+                <div class="tabI blueI">
+                    <input id="tabI-horario" type="radio" name="tabIs2">
+                    <label for="tabI-horario">Academico</label>
+                    <div class="tabI-contentI">
+                        <p><a href="proceso/academico/p_a_horario.php">Horario</a></p>
+                        <p><a href="proceso/academico/p_a_cursoo.php">Curso-Operativo</a></p>
+                        <p><a href="#">Horario-Clases</a></p>
+                        <p><a href="#">Cursos-Alumno</a></p>
+                        <p><a href="proceso/academico/p_a_registronotas.php">Registro-Notas</a></p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="tab blue">
+            <input id="tab-consultas" type="radio" name="tabs2">
+            <label for="tab-consultas">Consultas</label>
+            <div class="tab-content">
+                <p><a href="consultas/alumnos/c_a_alumnos.php">Alumnos</a></p>
+                <p><a href="consultas/pagoalumnos/c_pgs_pagoalumnos.php">Compromiso Alumnos</a></p>
+                <p><a href="consultas/pagofecha/c_pf_pagofecha.php">Pagos por Fecha</a></p>
+                <p><a href="consultas/matricula/c_m_matricula.php">Matricula Alumno</a></p>
+                <p><a href="consultas/pagoalumno/c_pg_pagoalumno.php">Pago Alumnos</a></p>
+                <p><a href="consultas/verpago/c_v_verpago.php">Ver Pagos</a></p>
+                <p><a href="consultas/notasalumno/c_n_notasalumno.php">Notas por Alumno</a></p>
+                <p><a href="#">Pagos por Tipo</a></p>
+            </div>
+        </div> 
+        <div class="tab blue">
+            <input id="tab-reportes" type="radio" name="tabs2">
+            <label for="tab-reportes">Reportes</label>
+            <div class="tab-content">
+                <p><a href="#">Pagos por Proceso</a></p>
+                <p><a href="#">Historico de Pagos</a></p>
+                <p><a href="#">Notas por cuso ope.</a></p>
+                <p><a href="#">Notas Registradas.</a></p>
+                <p><a href="#">Horario Alumnos.</a></p><!--no sirve-->
+                <p><a href="#">Horario Docente.</a></p><!--no sirve-->
+                <p><a href="#">Horario Aula.</a></p><!--no sirve-->
+            </div>
+        </div> 
+        <div class="tab blue">
+            <input id="tab-logout" type="radio" name="tabs2">
+            <label for="tab-logout">Logout</label>
+            <div class="tab-content">
+                <p><a href="logout.php">Salir</a></p>
+            </div>
+        </div> 
+    </div>
+</div>
